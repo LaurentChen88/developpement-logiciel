@@ -13,7 +13,7 @@ def train_data():
         "Sex": ["male", "female", "female"],
         "SibSp": [1, 0, 0],
         "Parch": [0, 1, 2],
-        "Survived": [1, 0, 1]
+        "Survived": [1, 0, 1],
     }
     return pd.DataFrame(data)
 

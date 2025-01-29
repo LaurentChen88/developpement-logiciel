@@ -7,8 +7,9 @@ from prediction_utilities import make_predictions
 # Fixture pour le chemin du modèle
 @pytest.fixture
 def model_path(tmp_path):
-    model = joblib.dump(joblib.load("path/to/random_forest_model.pkl"),
-                        tmp_path / "model.pkl")
+    model = joblib.dump(
+        joblib.load("path/to/random_forest_model.pkl"), tmp_path / "model.pkl"
+    )
     return model
 
 
@@ -20,7 +21,7 @@ def test_data():
         "Pclass": [1, 2, 3],
         "Sex": ["male", "female", "female"],
         "SibSp": [1, 0, 0],
-        "Parch": [0, 1, 2]
+        "Parch": [0, 1, 2],
     }
     return pd.DataFrame(data)
 

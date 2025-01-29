@@ -11,7 +11,7 @@ def train_path(tmp_path):
         "Sex": ["male", "female", "female"],
         "SibSp": [1, 0, 0],
         "Parch": [0, 1, 2],
-        "Survived": [1, 0, 1]
+        "Survived": [1, 0, 1],
     }
     train_df = pd.DataFrame(train_data)
     train_csv = tmp_path / "train.csv"
@@ -25,7 +25,7 @@ def test_path(tmp_path):
         "Pclass": [1, 2, 3],
         "Sex": ["male", "female", "female"],
         "SibSp": [1, 0, 0],
-        "Parch": [0, 1, 2]
+        "Parch": [0, 1, 2],
     }
     test_df = pd.DataFrame(test_data)
     test_csv = tmp_path / "test.csv"

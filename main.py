@@ -1,6 +1,7 @@
 """
 Point d'entrée principal.
 """
+
 from src.data_preprocessing import load_data, preprocess_data
 from src.model_training import train_model
 from src.model_evaluation import make_predictions

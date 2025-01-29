@@ -1,12 +1,12 @@
 """
 Module pour l’entraînement et la sauvegarde des modèles.
 """
+
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 
-def train_model(X, y, output_path, n_estimators=100,
-                max_depth=5, random_state=1):
+def train_model(X, y, output_path, n_estimators=100, max_depth=5, random_state=1):
     """
     Entraîne un modèle RandomForestClassifier et l'enregistre dans un fichier.
 
@@ -33,9 +33,9 @@ def train_model(X, y, output_path, n_estimators=100,
     Enregistre également le modèle sous forme de fichier pour
     une utilisation ultérieure.
     """
-    model = RandomForestClassifier(n_estimators=n_estimators,
-                                   max_depth=max_depth,
-                                   random_state=random_state)
+    model = RandomForestClassifier(
+        n_estimators=n_estimators, max_depth=max_depth, random_state=random_state
+    )
     model.fit(X, y)
     joblib.dump(model, output_path)
     return model
@@ -46,9 +46,11 @@ if __name__ == "__main__":
 
     # Charger et préparer les données
     train_data, test_data = data_preprocessing.load_data(
-        "path/to/train.csv", "path/to/test.csv")
+        "path/to/train.csv", "path/to/test.csv"
+    )
     X, y, X_test = data_preprocessing.preprocess_data(
-        train_data, test_data, ["Pclass", "Sex", "SibSp", "Parch"])
+        train_data, test_data, ["Pclass", "Sex", "SibSp", "Parch"]
+    )
 
     # Entraîner le modèle
     model_path = "random_forest_model.pkl"

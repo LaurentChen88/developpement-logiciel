@@ -1,6 +1,7 @@
 """
 Module pour charger et prétraiter les données avant analyse.
 """
+
 import pandas as pd
 
 
