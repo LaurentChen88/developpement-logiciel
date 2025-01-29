@@ -7,7 +7,7 @@ import joblib
 
 def make_predictions(model_path, X_test, test_data, output_path):
     """
-    Charge un modèle depuis un fichier, 
+    Charge un modèle depuis un fichier,
     effectue des prédictions et enregistre les résultats.
 
     Paramètres :
@@ -31,7 +31,7 @@ def make_predictions(model_path, X_test, test_data, output_path):
     """
     model = joblib.load(model_path)
     predictions = model.predict(X_test)
-    output = pd.DataFrame({'PassengerId': test_data.PassengerId, 
+    output = pd.DataFrame({'PassengerId': test_data.PassengerId,
                            'Survived': predictions})
     output.to_csv(output_path, index=False)
     print("Predictions saved to", output_path)
@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     # Charger les données de test
     _, test_data = data_preprocessing.load_data(
-        "path/to/train.csv", 
+        "path/to/train.csv",
         "path/to/test.csv"
         )
     _, _, X_test = data_preprocessing.preprocess_data(

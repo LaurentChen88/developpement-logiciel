@@ -2,6 +2,7 @@ import pandas as pd
 import pytest
 import joblib
 from model_training import train_random_forest_model
+from sklearn.ensemble import RandomForestClassifier
 
 
 # Fixture pour les données d'entraînement

@@ -6,13 +6,13 @@ import pandas as pd
 
 def load_data(train_path, test_path):
     """
-    Charge les données d'entraînement et de test à partir des fichiers 
+    Charge les données d'entraînement et de test à partir des fichiers
     CSV spécifiés.
 
     Parameters:
-    train_path (str): Le chemin vers le fichier CSV contenant 
+    train_path (str): Le chemin vers le fichier CSV contenant
     les données d'entraînement.
-    test_path (str): Le chemin vers le fichier CSV contenant 
+    test_path (str): Le chemin vers le fichier CSV contenant
     les données de test.
 
     Returns:
@@ -27,17 +27,17 @@ def load_data(train_path, test_path):
 
 def preprocess_data(train_data, test_data, features):
     """
-    Prétraite les données d'entraînement et de test en appliquant 
+    Prétraite les données d'entraînement et de test en appliquant
     les transformations nécessaires.
 
-    Cette fonction effectue la conversion des variables catégorielles 
+    Cette fonction effectue la conversion des variables catégorielles
     en variables numériques
     en utilisant la méthode `get_dummies` de pandas.
 
     Parameters:
     train_data (DataFrame): Les données d'entraînement.
     test_data (DataFrame): Les données de test.
-    features (list of str): La liste des colonnes à utiliser 
+    features (list of str): La liste des colonnes à utiliser
     pour le prétraitement.
 
     Returns:
