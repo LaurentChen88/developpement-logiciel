@@ -2,6 +2,7 @@ import pandas as pd
 import pytest
 from utilities import load_training_and_test_data, preprocess_data
 
+
 # Fixtures pour les chemins de fichiers CSV
 @pytest.fixture
 def train_path(tmp_path):
@@ -17,6 +18,7 @@ def train_path(tmp_path):
     train_df.to_csv(train_csv, index=False)
     return train_csv
 
+
 @pytest.fixture
 def test_path(tmp_path):
     test_data = {
@@ -30,6 +32,7 @@ def test_path(tmp_path):
     test_df.to_csv(test_csv, index=False)
     return test_csv
 
+
 # Tests pour la fonction load_training_and_test_data
 def test_load_training_and_test_data(train_path, test_path):
     train_data, test_data = load_training_and_test_data(train_path, test_path)
@@ -37,6 +40,7 @@ def test_load_training_and_test_data(train_path, test_path):
     assert not test_data.empty
     assert "Survived" in train_data.columns
     assert "Survived" not in test_data.columns
+
 
 # Tests pour la fonction preprocess_data
 def test_preprocess_data(train_path, test_path):
@@ -50,6 +54,7 @@ def test_preprocess_data(train_path, test_path):
     assert "Survived" not in X_test.columns
     assert len(X.columns) == len(X_test.columns)
 
+
 # Tests pour des cas extrêmes
 def test_preprocess_data_empty(train_path, test_path):
     train_data, test_data = load_training_and_test_data(train_path, test_path)
@@ -58,6 +63,7 @@ def test_preprocess_data_empty(train_path, test_path):
     assert X.empty
     assert not y.empty
     assert X_test.empty
+
 
 def test_preprocess_data_single_feature(train_path, test_path):
     train_data, test_data = load_training_and_test_data(train_path, test_path)

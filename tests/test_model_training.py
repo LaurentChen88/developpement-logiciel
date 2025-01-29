@@ -3,6 +3,7 @@ import pytest
 import joblib
 from model_training import train_random_forest_model
 
+
 # Fixture pour les données d'entraînement
 @pytest.fixture
 def train_data():
@@ -15,6 +16,7 @@ def train_data():
     }
     return pd.DataFrame(data)
 
+
 # Fixture pour les données d'entraînement prétraitées
 @pytest.fixture
 def X_y(train_data):
@@ -22,10 +24,12 @@ def X_y(train_data):
     y = train_data["Survived"]
     return X, y
 
+
 # Fixture pour le chemin de sortie
 @pytest.fixture
 def output_path(tmp_path):
     return tmp_path / "model.pkl"
+
 
 # Test pour la fonction train_random_forest_model
 def test_train_random_forest_model(X_y, output_path):
