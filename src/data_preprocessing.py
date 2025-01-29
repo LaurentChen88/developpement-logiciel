@@ -45,7 +45,7 @@ def preprocess_data(train_data, test_data, features):
 
 if __name__ == "__main__":
     """
-    Point d'entrée principal pour charger et prétraiter les données.
+    Point d'entrée principal.
     """
     train_path = "path/to/train.csv"
     test_path = "path/to/test.csv"
