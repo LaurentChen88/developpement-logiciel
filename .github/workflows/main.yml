@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest flake8 black
+        pip install pandas pytest flake8 black
 
     - name: Run linter
       run: flake8 .
