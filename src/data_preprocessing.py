@@ -44,9 +44,6 @@ def preprocess_data(train_data, test_data, features):
     return X, y, X_test
 
 if __name__ == "__main__":
-    """
-    Point d'entrée principal.
-    """
     train_path = "path/to/train.csv"
     test_path = "path/to/test.csv"
     features = ["Pclass", "Sex", "SibSp", "Parch"]

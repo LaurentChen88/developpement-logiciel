@@ -34,9 +34,6 @@ def make_predictions(model_path, X_test, test_data, output_path):
     print("Predictions saved to", output_path)
 
 if __name__ == "__main__":
-    """
-    Point d'entrée principal.
-    """
     import data_preprocessing
 
     # Charger les données de test

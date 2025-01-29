@@ -36,9 +36,6 @@ def train_model(X, y, output_path, n_estimators=100, max_depth=5, random_state=1
     return model
 
 if __name__ == "__main__":
-    """
-    Point d'entrée principal.
-    """
     import data_preprocessing
     
     # Charger et préparer les données
