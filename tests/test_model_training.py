@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 import joblib
-from model_training import train_random_forest_model
+from model_training import train_model
 from sklearn.ensemble import RandomForestClassifier
 
 
@@ -32,10 +32,10 @@ def output_path(tmp_path):
     return tmp_path / "model.pkl"
 
 
-# Test pour la fonction train_random_forest_model
-def test_train_random_forest_model(X_y, output_path):
+# Test pour la fonction train_model
+def test_train_model(X_y, output_path):
     X, y = X_y
-    model = train_random_forest_model(X, y, output_path)
+    model = train_model(X, y, output_path)
     assert model is not None
     assert output_path.exists()
     loaded_model = joblib.load(output_path)

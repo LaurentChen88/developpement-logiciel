@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from utilities import load_training_and_test_data, preprocess_data
+from data_preprocessing import load_data, preprocess_data
 
 
 # Fixtures pour les chemins de fichiers CSV
@@ -33,9 +33,9 @@ def test_path(tmp_path):
     return test_csv
 
 
-# Tests pour la fonction load_training_and_test_data
-def test_load_training_and_test_data(train_path, test_path):
-    train_data, test_data = load_training_and_test_data(train_path, test_path)
+# Tests pour la fonction load_data
+def test_load_data(train_path, test_path):
+    train_data, test_data = load_data(train_path, test_path)
     assert not train_data.empty
     assert not test_data.empty
     assert "Survived" in train_data.columns
@@ -44,7 +44,7 @@ def test_load_training_and_test_data(train_path, test_path):
 
 # Tests pour la fonction preprocess_data
 def test_preprocess_data(train_path, test_path):
-    train_data, test_data = load_training_and_test_data(train_path, test_path)
+    train_data, test_data = load_data(train_path, test_path)
     feature_columns = ["Pclass", "Sex", "SibSp", "Parch"]
     X, y, X_test = preprocess_data(train_data, test_data, feature_columns)
     assert not X.empty
@@ -57,7 +57,7 @@ def test_preprocess_data(train_path, test_path):
 
 # Tests pour des cas extrêmes
 def test_preprocess_data_empty(train_path, test_path):
-    train_data, test_data = load_training_and_test_data(train_path, test_path)
+    train_data, test_data = load_data(train_path, test_path)
     feature_columns = []
     X, y, X_test = preprocess_data(train_data, test_data, feature_columns)
     assert X.empty
@@ -66,7 +66,7 @@ def test_preprocess_data_empty(train_path, test_path):
 
 
 def test_preprocess_data_single_feature(train_path, test_path):
-    train_data, test_data = load_training_and_test_data(train_path, test_path)
+    train_data, test_data = load_data(train_path, test_path)
     feature_columns = ["Pclass"]
     X, y, X_test = preprocess_data(train_data, test_data, feature_columns)
     assert not X.empty
