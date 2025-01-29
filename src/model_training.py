@@ -6,7 +6,9 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 
-def train_model(X, y, output_path, n_estimators=100, max_depth=5, random_state=1):
+def train_model(
+        X, y, output_path, n_estimators=100, max_depth=5, random_state=1
+):
     """
     Entraîne un modèle RandomForestClassifier et l'enregistre dans un fichier.
 
@@ -34,7 +36,9 @@ def train_model(X, y, output_path, n_estimators=100, max_depth=5, random_state=1
     une utilisation ultérieure.
     """
     model = RandomForestClassifier(
-        n_estimators=n_estimators, max_depth=max_depth, random_state=random_state
+        n_estimators=n_estimators,
+        max_depth=max_depth,
+        random_state=random_state
     )
     model.fit(X, y)
     joblib.dump(model, output_path)

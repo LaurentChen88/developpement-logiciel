@@ -43,7 +43,9 @@ if __name__ == "__main__":
     import data_preprocessing
 
     # Charger les données de test
-    _, test_data = data_preprocessing.load_data("path/to/train.csv", "path/to/test.csv")
+    _, test_data = data_preprocessing.load_data(
+        "path/to/train.csv", "path/to/test.csv"
+    )
     _, _, X_test = data_preprocessing.preprocess_data(
         _, test_data, ["Pclass", "Sex", "SibSp", "Parch"]
     )
