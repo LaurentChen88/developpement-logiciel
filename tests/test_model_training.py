@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 import joblib
-from src.model_training import train_model
+from model_training import train_model
 from sklearn.ensemble import RandomForestClassifier
 
 
