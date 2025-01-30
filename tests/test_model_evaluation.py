@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 import joblib
-from model_evaluation import make_predictions
+from src.model_evaluation import make_predictions
 
 
 # Fixture pour le chemin du modèle

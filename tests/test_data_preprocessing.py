@@ -1,12 +1,6 @@
 import pandas as pd
 import pytest
-import sys
-import os
-
-sys.path.insert(
-    0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../src"))
-)
-from data_preprocessing import load_data, preprocess_data
+from src.data_preprocessing import load_data, preprocess_data
 
 
 # Fixtures pour les chemins de fichiers CSV
