@@ -1,0 +1,58 @@
+├── https://github.com/LaurentChen88/developpement-logiciel/new/main
+│   ├── main.yml
+├── data
+│   ├── test.csv
+│   ├── train.csv
+├── docs
+│   ├── build
+│   │   ├── doctrees
+│   │   │   ├── environment.pickle
+│   │   │   ├── index.doctree
+│   │   │   ├── modules.doctree
+│   │   │   ├── src.doctree
+│   │   ├── html
+│   │   │   ├── _sources
+│   │   │   │   ├── index.rst.txt
+│   │   │   │   ├── modules.rst.txt
+│   │   │   │   ├── src.rst.txt
+│   │   │   ├── _static
+│   │   │   │   ├── alabaster.css
+│   │   │   │   ├── basic.css
+│   │   │   │   ├── custom.css
+│   │   │   │   ├── doctools.js
+│   │   │   │   ├── file.png
+│   │   │   │   ├── language_data.js
+│   │   │   │   ├── minus.png
+│   │   │   │   ├── plus.png
+│   │   │   │   ├── pygments.css
+│   │   │   │   ├── sphinx_highlight.js
+│   │   │   ├── index.html
+│   │   │   ├── genindex.html
+│   │   │   ├── modules.html
+│   │   │   ├── objects.inv
+│   │   │   ├── search.html
+│   │   │   ├── searchindex.js
+│   │   │   ├── src.html
+│   ├── source
+│   │   ├── conf.py
+│   │   ├── index.rst
+│   │   ├── modules.rst
+│   │   ├── src.rst
+│   ├── Makefile
+│   ├── make.bat
+├── src
+│   ├── __pycache__
+│   │   ├── data_preprocessing.cpython-310.pyc
+│   │   ├── model_evaluation.cpython-310.pyc
+│   │   ├── model_training.cpython-310.pyc
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── model_evaluation.py
+│   ├── model_training.py
+│   ├── tests
+│   │   ├── test_model_training.py
+├── README.md
+├── main.py
+├── pyproject.toml
+├── pytest.ini
+├── random_forest_model.pkl
