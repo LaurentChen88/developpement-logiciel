@@ -8,7 +8,7 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 ### Prérequis
 
-- Python (>= 3.8)
+- Python (>= 3.10.7)
 - Git
 - VS Code
 - Virtualenv pour la gestion des dépendances
@@ -33,17 +33,9 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 ### Utilisation
 
-1. **Exécuter l’analyse exploratoire :**
+1. **Exécuter le script :**
    ```bash
-   python scripts/eda.py
-   ```
-2. **Entraîner le modèle :**
-   ```bash
-   python scripts/train_model.py
-   ```
-3. **Faire une prédiction :**
-   ```bash
-   python scripts/predict.py --input sample_data.csv
+   python main.py
    ```
 
 ## Contribution des membres
@@ -81,6 +73,7 @@ Furkan est chargé de l’organisation générale du projet, incluant la gestion
 
 ## Livraison
 
-- **URL du dépôt GitHub :** [Lien vers le dépôt](https://github.com/LaurentChen88/developpement-logiciel.git)
+- **URL du dépôt GitHub :** [Lien vers le dépôt]([https://github.com/votre-repo/titanic-prediction](https://github.com/LaurentChen88/developpement-logiciel.git))
 - **Rapport détaillé :** Déposé sur le drive dédié au groupe
 - **Date limite :** Vendredi 31 janvier 2025
+
