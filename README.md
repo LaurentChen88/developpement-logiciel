@@ -10,8 +10,8 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 - Python (>= 3.10.7)
 - Git
-- Un IDE de votre choix (VS Code, PyCharm, etc.)
-- Virtualenv ou conda pour la gestion des dépendances
+- VS Code
+- Virtualenv pour la gestion des dépendances
 
 ### Installation
 
