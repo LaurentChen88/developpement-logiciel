@@ -69,7 +69,6 @@ Furkan est chargé de l’organisation générale du projet, incluant la gestion
 - **Outil de versionnement :** Git et GitHub
 - **Branche principale :** `main`
 - **Flux de travail Git :**
-  - Chaque membre travaille sur une branche dédiée (`feature/nom-feature`)
   - Les modifications sont fusionnées via des pull requests (PRs) après revue de code
 
 ## CI/CD
@@ -82,11 +81,7 @@ Furkan est chargé de l’organisation générale du projet, incluant la gestion
 
 ## Livraison
 
-- **URL du dépôt GitHub :** [Lien vers le dépôt](https://github.com/votre-repo/titanic-prediction)
+- **URL du dépôt GitHub :** [Lien vers le dépôt]([https://github.com/votre-repo/titanic-prediction](https://github.com/LaurentChen88/developpement-logiciel.git))
 - **Rapport détaillé :** Déposé sur le drive dédié au groupe
 - **Date limite :** Vendredi 31 janvier 2025
-
----
-
-📩 Pour toute question, contactez-nous via [dinamedy@hotmail.com](mailto:dinamedy@hotmail.com).
 
