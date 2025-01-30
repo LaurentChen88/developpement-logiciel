@@ -13,7 +13,8 @@ def train_data():
     pour tester le modèle.
 
     Returns:
-        pd.DataFrame: Jeu de données contenant les caractéristiques et la cible.
+        pd.DataFrame: Jeu de données contenant les caractéristiques
+        et la cible.
     """
     data = {
         "Pclass": [1, 2, 3],
@@ -29,20 +30,23 @@ def train_data():
 @pytest.fixture
 def X_y(train_data):
     """
-    Prépare les caractéristiques (X) et la cible (y) à partir des données d'entraînement.
+    Prépare les caractéristiques (X) et la cible (y) à partir des
+    données d'entraînement.
 
     Args:
         train_data (pd.DataFrame): Jeu de données d'entraînement factice.
 
     Returns:
-        tuple: (X, y) où X est un DataFrame des caractéristiques et y est la série cible.
+        tuple: (X, y) où X est un DataFrame des caractéristiques
+        et y est la série cible.
     """
     X = pd.get_dummies(train_data[["Pclass", "Sex", "SibSp", "Parch"]])
     y = train_data["Survived"]
     return X, y
 
 
-# Fixture pour générer un chemin de fichier temporaire pour enregistrer le modèle
+# Fixture pour générer un chemin de fichier temporaire pour enregistrer
+# le modèle
 @pytest.fixture
 def output_path(tmp_path):
     """
@@ -60,7 +64,8 @@ def output_path(tmp_path):
 # Test unitaire pour la fonction train_model
 def test_train_model(X_y, output_path):
     """
-    Teste la fonction train_model pour s'assurer qu'elle entraîne et sauvegarde un modèle.
+    Teste la fonction train_model pour s'assurer qu'elle entraîne et
+    sauvegarde un modèle.
 
     Args:
         X_y (tuple): Données d'entraînement (X, y).
