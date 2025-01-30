@@ -8,7 +8,7 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 ### Prérequis
 
-- Python (>= 3.8)
+- Python (>= 3.10.7)
 - Git
 - Un IDE de votre choix (VS Code, PyCharm, etc.)
 - Virtualenv ou conda pour la gestion des dépendances
