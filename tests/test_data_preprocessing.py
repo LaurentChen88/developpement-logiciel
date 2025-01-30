@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from data_preprocessing import load_data, preprocess_data
+from src.data_preprocessing import load_data, preprocess_data
 
 
 # Fixtures pour les chemins de fichiers CSV
