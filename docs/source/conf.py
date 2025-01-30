@@ -30,4 +30,3 @@ napoleon_numpy_docstring = False
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
-
