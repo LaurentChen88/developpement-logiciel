@@ -17,7 +17,7 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 1. **Cloner le dépôt GitHub :**
    ```bash
-   git clone https://github.com/votre-repo/titanic-prediction.git
+   git clone https://github.com/LaurentChen88/developpement-logiciel.git
    cd titanic-prediction
    ```
 2. **Créer un environnement virtuel et l’activer :**
@@ -67,8 +67,8 @@ Furkan est chargé de l’organisation générale du projet, incluant la gestion
 
 - **Outil utilisé :** GitHub Actions
 - **Automatisations :**
-  - Vérification du code (PEP8, linting)
-  - Exécution des tests unitaires
+  - Vérification du code (PEP8, linting avec Black)
+  - Exécution des tests unitaires (Pytest)
   - Déploiement si nécessaire
 
 ## Livraison
