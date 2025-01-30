@@ -33,17 +33,9 @@ Ce projet a pour but de refactoriser le notebook "Titanic Survival Prediction" e
 
 ### Utilisation
 
-1. **Exécuter l’analyse exploratoire :**
+1. **Exécuter le script :**
    ```bash
-   python scripts/eda.py
-   ```
-2. **Entraîner le modèle :**
-   ```bash
-   python scripts/train_model.py
-   ```
-3. **Faire une prédiction :**
-   ```bash
-   python scripts/predict.py --input sample_data.csv
+   python main.py
    ```
 
 ## Contribution des membres
