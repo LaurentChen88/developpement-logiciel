@@ -49,10 +49,12 @@
 │   ├── data_preprocessing.py
 │   ├── model_evaluation.py
 │   ├── model_training.py
-│   ├── tests
-│   │   ├── test_model_training.py
+├── tests
+│   ├── test_model_training.py
 ├── README.md
 ├── main.py
 ├── pyproject.toml
 ├── pytest.ini
 ├── random_forest_model.pkl
+├── requirements.txt
+├── submission.csv

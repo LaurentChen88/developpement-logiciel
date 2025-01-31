@@ -67,7 +67,7 @@ Furkan est chargé de l’organisation générale du projet, incluant la gestion
 
 - **Outil utilisé :** GitHub Actions
 - **Automatisations :**
-  - Vérification du code (PEP8, linting avec Black)
+  - Vérification du code (conformité PEP8, formatage avec Black, linting avec Flake8)
   - Exécution des tests unitaires (Pytest)
   - Déploiement si nécessaire
 
