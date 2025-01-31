@@ -22,8 +22,10 @@ author = "Laurent Chen"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.autodoc",  # Génération automatique de documentation depuis les docstrings
-    "sphinx.ext.napoleon",  # Support du style Google et NumPy pour les docstrings
+    # Génération automatique de documentation depuis les docstrings
+    "sphinx.ext.autodoc",
+    # Support du style Google et NumPy pour les docstrings
+    "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",  # Ajoute les liens vers le code source
     "sphinx.ext.todo",  # Permet d'utiliser des TODOs dans la doc
     "sphinx.ext.autosummary",  # Génère automatiquement des résumés de module
