@@ -1,3 +1,11 @@
+import os
+import sys
+
+sys.path.insert(
+    0, os.path.abspath("../../src")
+)  # Ajuste selon ton arborescence
+
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -14,12 +22,15 @@ author = "Laurent Chen"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.autodoc",  # Pour générer la doc à partir des docstrings
-    "sphinx.ext.napoleon",  # Support des docstrings format Google/NumPy
+    "sphinx.ext.autodoc",  # Génération automatique de documentation depuis les docstrings
+    "sphinx.ext.napoleon",  # Support du style Google et NumPy pour les docstrings
+    "sphinx.ext.viewcode",  # Ajoute les liens vers le code source
+    "sphinx.ext.todo",  # Permet d'utiliser des TODOs dans la doc
+    "sphinx.ext.autosummary",  # Génère automatiquement des résumés de module
 ]
 
 templates_path = ["_templates"]
-exclude_patterns = []
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # Activer le support des docstrings Google
 napoleon_google_docstring = True

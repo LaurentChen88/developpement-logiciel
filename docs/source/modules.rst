@@ -1,12 +1,7 @@
-Modules
-=======
+MyProject Modules
+=================
 
-.. automodule:: model_training
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. toctree::
+   :maxdepth: 1
 
-.. automodule:: data_preprocessing
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   src

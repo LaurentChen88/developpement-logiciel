@@ -1,37 +1,17 @@
-src package
-===========
+Source Code Documentation
+=========================
 
-Submodules
-----------
-
-src.data\_preprocessing module
-------------------------------
-
-.. automodule:: src.data_preprocessing
+.. automodule:: data_preprocessing
    :members:
    :undoc-members:
    :show-inheritance:
 
-src.model\_evaluation module
-----------------------------
-
-.. automodule:: src.model_evaluation
+.. automodule:: model_training
    :members:
    :undoc-members:
    :show-inheritance:
 
-src.model\_training module
---------------------------
-
-.. automodule:: src.model_training
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: src
+.. automodule:: model_evaluation
    :members:
    :undoc-members:
    :show-inheritance:
